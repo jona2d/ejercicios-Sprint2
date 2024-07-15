@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Color del Cuadrado</title>    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body">
+<main class="flex flex-wrap">
+
+    <div class="text-center">
+        <div id="cuadrado" class="w-48 h-48 bg-gray-400 flex items-center justify-center text-white text-xl font-bold">Gris</div>
+        <button id="botonCambiarColor" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Cambiar</button>
+    </div>
+    
+    <div class="text-center">
+        <!-- Cuadrado gris donde se mostrará el texto -->
+        <div id="cuadrado1" class="w-48 h-48 bg-gray-400 flex items-center justify-center text-white text-xl font-bold"></div>
+        
+        <!-- Entrada de texto -->
+        <input id="entradaTexto" type="text" placeholder="Escribe aquí" class="mt-4 px-4 py-2 border rounded">
+        
+        <!-- Botón para borrar el contenido del cuadrado -->
+        <button id="botonBorrar" class="mt-4 px-4 py-2 bg-red-500 text-white rounded">Borrar</button>
+    </div>
+    
+    <div class="text-center">
+        <h1 class="text-2xl mb-4">Calculadora de IMC</h1>
+        
+        <div class="mb-4">
+            <label for="altura" class="block mb-2">Altura (cm):</label>
+            <input id="altura" type="number" class="px-4 py-2 border rounded w-full" placeholder="Ingrese su altura">
+        </div>
+        
+        <div class="mb-4">
+            <label for="peso" class="block mb-2">Peso (kg):</label>
+            <input id="peso" type="number" class="px-4 py-2 border rounded w-full" placeholder="Ingrese su peso">
+        </div>
+        
+        <button id="botonCalcular" class="px-4 py-2 bg-blue-500 text-white rounded">Calcular</button>
+        
+        <div class="mt-4">
+            <label for="resultado" class="block mb-2">Su IMC:</label>
+            <input id="resultado" type="text" class="px-4 py-2 border rounded w-full" readonly>
+        </div>
+    </div>
+    <!-- //ejercicio 4 -->
+    <div id="divMonedero" class="flex flex-col items-center w-[400px] h-[800px] gap-8 bg-red-400">
+        <h2>Ingresar monto en pesos</h2>
+        <label>sin comas ni puntos 
+            <input id="monto" type="number" placeholder="500">
+        </label>
+
+        <h2>Ingresar monto en dolares</h2>
+        <label>sin comas ni puntos 
+            <input class="inputDolarr" readonly id="inputDeDolaress"  type="number" placeholder="1">
+        </label>
+
+        <button id="botonEnviar" type="submit" class="font-serif p-2 border border-cyan-700 rounded-md">Convertir</button>
+        <button type="button" id="borrar" class="font-serif p-2 border border-cyan-700 rounded-md">Limpiar</button>
+    </div>
+</main>
+    <script src="./datos.js"></script>
+    <script src="./jascript.js"></script>
+</body>
+</html>
